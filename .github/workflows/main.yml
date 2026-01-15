@@ -1,0 +1,31 @@
+name: Generate Portfolio
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: |
+          npm install -g npm@latest
+          npm install
+
+      - name: Run Code
+        run: npm run start
+
+      - name: Commit & Push
+        run: |
+          git config user.name GitBot
+          git config user.email abd0102413@gmail.com
+          git add .
+          git commit -m "portfolio Bot" || echo "No changes"
+          git push
