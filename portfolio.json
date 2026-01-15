@@ -1,0 +1,131 @@
+{
+  "header": {
+    "name": "Abdalla Ahmed",
+    "title": "Full Stack Developer",
+    "tagline": "Crafting Exceptional Web Experiences",
+    "description": "A Full Stack Developer passionate about turning ideas into realistic and practical applications."
+  },
+  "contact": {
+    "whatsapp": "https://api.whatsapp.com/send?phone=2001024131345",
+    "github": "https://github.com/abdalla-3077",
+    "email": "abd0102413@gmail.com"
+  },
+  "projects": [
+    {
+      "name": "Study Timer Bot",
+      "category": "EdTech & Gamification",
+      "year": "2026",
+      "description": "A gamified productivity bot serving 12,000+ users with virtual pet mechanics.",
+      "technologies": "Discord.js, Bun, Canvas + 2"
+    },
+    {
+      "name": "Learnify Platform",
+      "category": "EdTech",
+      "year": "2024",
+      "description": "A comprehensive LMS platform focused on interactive learning experiences.",
+      "technologies": "Expo JS, TypeScript, MongoDB + 2"
+    },
+    {
+      "name": "Hi Egypt",
+      "category": "Tourism",
+      "year": "2025",
+      "description": "A tourism platform showcasing the beauty of Egypt.",
+      "technologies": "React, Zustand, MongoDB + 1"
+    },
+    {
+      "name": "Edufy Desktop",
+      "category": "Education",
+      "year": "2025",
+      "description": "Desktop application for offline learning management.",
+      "technologies": "Electron Forge, NeDB, React + 5"
+    },
+    {
+      "name": "Quran App",
+      "category": "Utility",
+      "year": "2025",
+      "description": "Mobile application for reading and listening to the Holy Quran.",
+      "technologies": "React Native, Expo JS, JSON"
+    },
+    {
+      "name": "Cairo Search",
+      "category": "Search Engine",
+      "year": "2025",
+      "description": "Local search engine optimized for Cairo businesses and services.",
+      "technologies": "Next.js, Node.js, MongoDB + 1"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Securing MongoDB Self-Managed",
+      "issuer": "MongoDB",
+      "year": "2025"
+    },
+    {
+      "name": "User Experience Research",
+      "issuer": "Edraak",
+      "year": "2025"
+    },
+    {
+      "name": "User Experience Design",
+      "issuer": "Edraak",
+      "year": "2025"
+    },
+    {
+      "name": "Cybersecurity Fundamentals",
+      "issuer": "IBM SkillsBuild",
+      "year": "2025"
+    },
+    {
+      "name": "MongoDB Encryption at Rest",
+      "issuer": "MongoDB",
+      "year": "2025"
+    },
+    {
+      "name": "Git Version Control | Git Essentials",
+      "issuer": "Udemy",
+      "year": "2026"
+    },
+    {
+      "name": "Docker Fundamentals",
+      "issuer": "Udemy",
+      "year": "2026"
+    },
+    {
+      "name": "GNU Nano in 30 Minutes",
+      "issuer": "Udemy",
+      "year": "2026"
+    },
+    {
+      "name": "Docker Compose: Simplified Multi-Container Application Management",
+      "issuer": "LinkedIn Learning",
+      "year": "2026"
+    }
+  ],
+  "volunteering": [
+    {
+      "role": "Volunteer Developer & Moderator",
+      "period": "Jan 2025 – Sep 2025",
+      "description": "Managed server channels and developed a custom Discord Timer Bot with ~1500+ daily users."
+    },
+    {
+      "role": "Volunteer Developer",
+      "period": "Sep 2025 – Jan 2026",
+      "description": "Developed an updated version of the Timer Bot and contributed to server management."
+    }
+  ],
+  "skills": {
+    "frontend": "React Native • Expo JS • Bootstrap • HTML • CSS • EJS • Zustand • Figma",
+    "backend": "Node.js • Bun • Express • MongoDB • NeDB • JavaScript • TypeScript • Discord.js • MD Scripts",
+    "tools": "Git • Railway • Vercel • Linux • Windows • Visual Studio Code • ChatGPT • Claude • Luncy"
+  },
+  "testimonials": [
+    {
+      "text": "Frankly, I want to thank you for your hard work on the bot. Your work is clearly organized and professional...",
+      "author": "Ghaida"
+    },
+    {
+      "text": "Speedy in execution, without any thoughts, I recommend dealing with him.",
+      "author": "Mohamed"
+    }
+  ]
+}
