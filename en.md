@@ -8,7 +8,7 @@ A Full Stack Developer passionate about turning ideas into realistic and practic
 
 ## 🚀 Available for Freelance
 
-**📞 Contact:** [WhatsApp](https://api.whatsapp.com)
+**📞 Contact:** [WhatsApp](https://api.whatsapp.com/send?phone=2001024131345)
 
 ---
 
