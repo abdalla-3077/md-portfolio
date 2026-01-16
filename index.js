@@ -26,17 +26,24 @@ async function translateText(text, targetLang) {
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-function cleanOldFiles() {
-  const rootFiles = ['en.md', 'ar.md', 'fr.md', 'zh-cn.md', 'de.md', 'README.md'];
-  
-  rootFiles.forEach(file => {
-    const filePath = path.join(__dirname, file);
-    if (fs.existsSync(filePath)) {
-      fs.unlinkSync(filePath);
-    }
-  });
-  
-  console.log('🗑️ Cleaned old files from root\n');
+// حذف مجلد الـ output القديم وإنشاء واحد جديد
+function cleanOutputDir() {
+  const outputDir = path.join(__dirname, 'output');
+  if (fs.existsSync(outputDir)) {
+    fs.rmSync(outputDir, { recursive: true, force: true });
+    console.log('🗑️ Cleaned old output folder\n');
+  }
+  fs.mkdirSync(outputDir);
+  console.log('📁 Created fresh output folder\n');
+}
+
+// حذف README القديم من الـ root
+function cleanRootReadme() {
+  const readmePath = path.join(__dirname, 'README.md');
+  if (fs.existsSync(readmePath)) {
+    fs.unlinkSync(readmePath);
+    console.log('🗑️ Cleaned old README.md from root\n');
+  }
 }
 
 async function generatePortfolioMD(data, lang) {
@@ -156,82 +163,58 @@ async function generatePortfolioMD(data, lang) {
 
 async function generateReadmeMD(data) {
   let content = `# 🌐 Welcome to My Portfolio\n\n`;
-  content += `<div align="center">\n\n`;
   content += `## 👨‍💻 ${data.header.name}\n`;
   content += `### ${data.header.title}\n\n`;
   content += `**✨ ${data.header.tagline}**\n\n`;
-  content += `[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?style=for-the-badge&logo=github)](${data.contact.github})\n`;
-  content += `[![WhatsApp](https://img.shields.io/badge/WhatsApp-Contact-25D366?style=for-the-badge&logo=whatsapp)](${data.contact.whatsapp})\n\n`;
-  content += `</div>\n\n`;
   content += `---\n\n`;
 
   content += `## 🌍 Choose Your Language\n\n`;
-  content += `<div align="center">\n\n`;
-  content += `| Language | النسخة | Langue | 语言 | Sprache |\n`;
-  content += `|:--------:|:------:|:------:|:----:|:-------:|\n`;
-  content += `| 🇬🇧 [**English**](./en.md) | 🇪🇬 [**العربية**](./ar.md) | 🇫🇷 [**Français**](./fr.md) | 🇨🇳 [**中文**](./zh-cn.md) | 🇩🇪 [**Deutsch**](./de.md) |\n\n`;
-  content += `</div>\n\n`;
+  content += `- 🇬🇧 [**English**](./output/en.md) - View portfolio in English\n`;
+  content += `- 🇪🇬 [**العربية**](./output/ar.md) - عرض السيرة الذاتية بالعربية\n`;
+  content += `- 🇫🇷 [**Français**](./output/fr.md) - Voir le portfolio en français\n`;
+  content += `- 🇨🇳 [**中文**](./output/zh-cn.md) - 查看中文简历\n`;
+  content += `- 🇩🇪 [**Deutsch**](./output/de.md) - Vollständiges Portfolio auf Deutsch\n\n`;
   content += `---\n\n`;
 
-  content += `## 🚀 Quick Access\n\n`;
-  content += `<table align="center">\n`;
-  content += `<tr>\n`;
-  content += `<td align="center" width="50%">\n\n`;
-  content += `### 📬 Contact Information\n\n`;
-  content += `- 📧 **Email:** ${data.contact.email}\n`;
-  content += `- 💬 **WhatsApp:** [Message Me](${data.contact.whatsapp})\n`;
-  content += `- 🔗 **GitHub:** [View Profile](${data.contact.github})\n\n`;
-  content += `</td>\n`;
-  content += `<td align="center" width="50%">\n\n`;
-  content += `### 🏆 Quick Stats\n\n`;
-  content += `- 🎯 **12,000+** Active Users\n`;
-  content += `- 💼 **${data.projects.length}+** Projects Completed\n`;
-  content += `- 🎓 **${data.certifications.length}+** Certifications\n\n`;
-  content += `</td>\n`;
-  content += `</tr>\n`;
-  content += `</table>\n\n`;
+  content += `## 📬 Contact Information\n\n`;
+  content += `- **📧 Email:** ${data.contact.email}\n`;
+  content += `- **💬 WhatsApp:** [Message Me](${data.contact.whatsapp})\n`;
+  content += `- **🔗 GitHub:** [${data.contact.github}](${data.contact.github})\n\n`;
+  content += `---\n\n`;
+
+  content += `## 🏆 Quick Stats\n\n`;
+  content += `- 🎯 **12,000+** Active Users across projects\n`;
+  content += `- 💼 **${data.projects.length}+** Major Projects Completed\n`;
+  content += `- 🎓 **${data.certifications.length}+** Professional Certifications\n`;
+  content += `- ⭐ **Open Source** Contributor\n\n`;
   content += `---\n\n`;
 
   content += `## 💼 Technical Skills\n\n`;
-  content += `<details open>\n`;
-  content += `<summary><b>🎨 Frontend Development</b></summary>\n\n`;
-  content += `\`\`\`\n${data.skills.frontend}\n\`\`\`\n\n`;
-  content += `</details>\n\n`;
-  
-  content += `<details>\n`;
-  content += `<summary><b>⚙️ Backend Development</b></summary>\n\n`;
-  content += `\`\`\`\n${data.skills.backend}\n\`\`\`\n\n`;
-  content += `</details>\n\n`;
-  
-  content += `<details>\n`;
-  content += `<summary><b>🛠️ Tools & DevOps</b></summary>\n\n`;
-  content += `\`\`\`\n${data.skills.tools}\n\`\`\`\n\n`;
-  content += `</details>\n\n`;
+  content += `### 🎨 Frontend Development\n`;
+  content += `${data.skills.frontend}\n\n`;
+  content += `### ⚙️ Backend Development\n`;
+  content += `${data.skills.backend}\n\n`;
+  content += `### 🛠️ Tools & DevOps\n`;
+  content += `${data.skills.tools}\n\n`;
   content += `---\n\n`;
 
-  content += `## 📂 Portfolio Files\n\n`;
-  content += `<div align="center">\n\n`;
-  content += `| 🌐 Language | 📄 File | 📝 Description |\n`;
-  content += `|------------|---------|----------------|\n`;
-  content += `| 🇬🇧 English | [\`en.md\`](./en.md) | Full portfolio in English |\n`;
-  content += `| 🇪🇬 Arabic | [\`ar.md\`](./ar.md) | السيرة الذاتية الكاملة بالعربية |\n`;
-  content += `| 🇫🇷 French | [\`fr.md\`](./fr.md) | Portfolio complet en français |\n`;
-  content += `| 🇨🇳 Chinese | [\`zh-cn.md\`](./zh-cn.md) | 完整的中文简历 |\n`;
-  content += `| 🇩🇪 German | [\`de.md\`](./de.md) | Vollständiges Portfolio auf Deutsch |\n\n`;
-  content += `</div>\n\n`;
+  content += `## 📂 Available Portfolio Files\n\n`;
+  content += `| Language | File | Description |\n`;
+  content += `|----------|------|-------------|\n`;
+  content += `| 🇬🇧 English | [en.md](./output/en.md) | Full portfolio in English |\n`;
+  content += `| 🇪🇬 Arabic | [ar.md](./output/ar.md) | السيرة الذاتية الكاملة بالعربية |\n`;
+  content += `| 🇫🇷 French | [fr.md](./output/fr.md) | Portfolio complet en français |\n`;
+  content += `| 🇨🇳 Chinese | [zh-cn.md](./output/zh-cn.md) | 完整的中文简历 |\n`;
+  content += `| 🇩🇪 German | [de.md](./output/de.md) | Vollständiges Portfolio auf Deutsch |\n\n`;
   content += `---\n\n`;
 
   content += `## 📫 Get in Touch\n\n`;
-  content += `<div align="center">\n\n`;
   content += `### 💼 Available for Freelance Work\n\n`;
   content += `**Let's turn your ideas into reality!**\n\n`;
-  content += `[![Contact on WhatsApp](https://img.shields.io/badge/Contact_on-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](${data.contact.whatsapp})\n\n`;
-  content += `</div>\n\n`;
+  content += `Contact me on [WhatsApp](${data.contact.whatsapp}) to discuss your project.\n\n`;
   content += `---\n\n`;
-  content += `<div align="center">\n\n`;
   content += `**© 2026 ${data.header.name}. All rights reserved.**\n\n`;
-  content += `*Made with ❤️ and ☕*\n\n`;
-  content += `</div>\n`;
+  content += `*Made with ❤️ and ☕*\n`;
 
   return content;
 }
@@ -240,31 +223,29 @@ async function main() {
   console.log('🚀 Starting Portfolio Generation...\n');
 
   try {
-    cleanOldFiles();
+    // حذف مجلد output القديم وإنشاء واحد جديد
+    cleanOutputDir();
+    
+    // حذف README القديم من الـ root
+    cleanRootReadme();
 
+    const outputDir = path.join(__dirname, 'output');
+
+    // إنشاء ملفات اللغات في مجلد output
     for (const [langCode, langName] of Object.entries(languages)) {
       console.log(`📝 Generating ${langName} portfolio...`);
       const content = await generatePortfolioMD(portfolioData, langCode);
-      const filename = path.join(__dirname, `${langCode}.md`);
+      const filename = path.join(outputDir, `${langCode}.md`);
       fs.writeFileSync(filename, content, 'utf8');
-      console.log(`✅ ${langName} portfolio created: ${langCode}.md\n`);
+      console.log(`✅ ${langName} portfolio created: output/${langCode}.md\n`);
       await delay(1000);
     }
 
-    console.log('📝 Generating README.md (Home Screen)...');
+    // إنشاء README.md في الـ root
+    console.log('📝 Generating README.md in root...');
     const readmeContent = await generateReadmeMD(portfolioData);
     const readmePath = path.join(__dirname, 'README.md');
     fs.writeFileSync(readmePath, readmeContent, 'utf8');
-    console.log(`✅ README.md created: README.md\n`);
-
-    console.log('🎉 All files generated successfully!');
-    console.log(`📂 Files created in root directory:`);
-    console.log(`   - README.md (Home page)`);
-    console.log(`   - en.md (English)`);
-    console.log(`   - ar.md (Arabic)`);
-    console.log(`   - fr.md (French)`);
-    console.log(`   - zh-cn.md (Chinese)`);
-    console.log(`   - de.md (German)`);
   } catch (error) {
     console.error('❌ Error:', error.message);
     process.exit(1);
