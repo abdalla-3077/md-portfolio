@@ -59,6 +59,7 @@ Les qualifications professionnelles comprennent :
 - 🎓 **Fondamentaux de Docker** — Udemy (2026)
 - 🎓 **GNU Nano en 30 minutes** — Udemy (2026)
 - 🎓 **Docker Compose : gestion simplifiée des applications multi-conteneurs** — LinkedIn Learning (2026)
+- 🎓 **Actions pratiques sur GitHub** — LinkedIn Learning (2026)
 
 ---
 

@@ -29,7 +29,7 @@
 
 - 🎯 **12,000+** Active Users across projects
 - 💼 **6+** Major Projects Completed
-- 🎓 **9+** Professional Certifications
+- 🎓 **10+** Professional Certifications
 - ⭐ **Open Source** Contributor
 
 ---

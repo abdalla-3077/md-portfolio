@@ -59,6 +59,7 @@ Zu den beruflichen Qualifikationen gehören:
 - 🎓 **Docker-Grundlagen** — Udemy (2026)
 - 🎓 **GNU Nano in 30 Minuten** — Udemy (2026)
 - 🎓 **Docker Compose: Vereinfachtes Multi-Container-Anwendungsmanagement** — LinkedIn Learning (2026)
+- 🎓 **Praktische GitHub-Aktionen** — LinkedIn Learning (2026)
 
 ---
 

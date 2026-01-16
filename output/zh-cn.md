@@ -59,6 +59,7 @@
 - 🎓 **Docker 基础知识** — Udemy (2026)
 - 🎓 **30 分钟了解 GNU Nano** — Udemy (2026)
 - 🎓 **Docker Compose：简化的多容器应用程序管理** — LinkedIn Learning (2026)
+- 🎓 **GitHub 实用操作** — LinkedIn Learning (2026)
 
 ---
 

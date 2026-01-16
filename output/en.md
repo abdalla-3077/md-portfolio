@@ -59,6 +59,7 @@ Professional credentials include:
 - 🎓 **Docker Fundamentals** — Udemy (2026)
 - 🎓 **GNU Nano in 30 Minutes** — Udemy (2026)
 - 🎓 **Docker Compose: Simplified Multi-Container Application Management** — LinkedIn Learning (2026)
+- 🎓 **Practical GitHub Actions** — LinkedIn Learning (2026)
 
 ---
 
