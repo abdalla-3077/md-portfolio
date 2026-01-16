@@ -92,7 +92,7 @@ Git • Railway • Vercel • Linux • Windows • Visual Studio Code • Chat
 > 💭 *"Ehrlich gesagt möchte ich Ihnen für Ihre harte Arbeit am Bot danken. Ihre Arbeit ist klar organisiert und professionell..."*
 > — **Ghaida**
 
-> 💭 *"Schnell in der Ausführung, ohne Gedanken, ich empfehle, sich an ihn zu wenden."*
+> 💭 *"Schnelle Ausführung, ohne Gedanken, ich empfehle, sich an ihn zu wenden."*
 > — **Mohamed**
 
 ---
