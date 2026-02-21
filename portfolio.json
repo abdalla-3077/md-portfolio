@@ -8,7 +8,7 @@
   "contact": {
     "whatsapp": "https://api.whatsapp.com/send?phone=2001024131345",
     "github": "https://github.com/abdalla-3077",
-    "email": "abd0102413@gmail.com"
+    "email": "info@abdallaahmed.icu"
   },
   "projects": [
     {
@@ -52,6 +52,20 @@
       "year": "2025",
       "description": "Local search engine optimized for Cairo businesses and services.",
       "technologies": "Next.js, Node.js, MongoDB + 1"
+    },
+    {
+      "name" : "NextStep AI",
+      "category" : "AI Productivity",
+      "description" : "NextStep AI is an intelligent task management platform designed to enhance productivity. Using AI, it analyzes your to-do items, prioritizes them, and provides smart suggestions for scheduling and task completion. Built with performance in mind, it leverages Fastify for a fast backend, Groq AI for advanced processing, and Next.js for a seamless frontend experience.",
+      "technologies" : "Next.js ,Fastify ,Groq AI",
+      "year" : "2026"
+    },
+    {
+      "name" : "OG - Opportunity Guidance",
+      "category" : "Education" , 
+      "year" : "2026",
+      "description" : "OG (Opportunity Guidance) is an innovative Android platform designed to make opportunities accessible and organized. The app serves as a comprehensive hub for discovering career opportunities, internships, and professional growth paths. With AI-powered recommendations and real-time notifications, it helps users save time and grow professionally. The platform features an intuitive interface built with React Native Paper, seamless notifications powered by Expo, and intelligent backend processing with Groq AI to provide personalized opportunity matching.",
+      "technologies" : "React Native, Expo, React Native Paper, Expo Notifications, Express, Groq AI, Firebase"
     }
   ],
   "certifications": [
@@ -104,6 +118,10 @@
       "name": "Practical GitHub Actions",
       "issuer": "LinkedIn Learning",
       "year": "2026"
+    },{
+      "name" : "Database Fundamentals",
+      "issuer" : "Mahara-Tech",
+      "year" : "2026"
     }
   ],
   "volunteering": [
