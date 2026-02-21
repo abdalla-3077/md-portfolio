@@ -42,6 +42,14 @@ A selection of my software work that I am proud of:
   Local search engine optimized for Cairo businesses and services.
   **🛠️ Technologies:** Next.js, Node.js, MongoDB + 1
 
+- **⏱️ NextStep AI** – *AI Productivity (2026)*
+  NextStep AI is an intelligent task management platform designed to enhance productivity. Using AI, it analyzes your to-do items, prioritizes them, and provides smart suggestions for scheduling and task completion. Built with performance in mind, it leverages Fastify for a fast backend, Groq AI for advanced processing, and Next.js for a seamless frontend experience.
+  **🛠️ Technologies:** Next.js ,Fastify ,Groq AI
+
+- **⏱️ OG - Opportunity Guidance** – *Education (2026)*
+  OG (Opportunity Guidance) is an innovative Android platform designed to make opportunities accessible and organized. The app serves as a comprehensive hub for discovering career opportunities, internships, and professional growth paths. With AI-powered recommendations and real-time notifications, it helps users save time and grow professionally. The platform features an intuitive interface built with React Native Paper, seamless notifications powered by Expo, and intelligent backend processing with Groq AI to provide personalized opportunity matching.
+  **🛠️ Technologies:** React Native, Expo, React Native Paper, Expo Notifications, Express, Groq AI, Firebase
+
 **🔗 View on GitHub:** [github.com](https://github.com/abdalla-3077)
 
 ---
@@ -60,6 +68,7 @@ Professional credentials include:
 - 🎓 **GNU Nano in 30 Minutes** — Udemy (2026)
 - 🎓 **Docker Compose: Simplified Multi-Container Application Management** — LinkedIn Learning (2026)
 - 🎓 **Practical GitHub Actions** — LinkedIn Learning (2026)
+- 🎓 **Database Fundamentals** — Mahara-Tech (2026)
 
 ---
 

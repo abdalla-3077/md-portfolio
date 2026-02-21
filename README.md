@@ -19,7 +19,7 @@
 
 ## 📬 Contact Information
 
-- **📧 Email:** abd0102413@gmail.com
+- **📧 Email:** info@abdallaahmed.icu
 - **💬 WhatsApp:** [Message Me](https://api.whatsapp.com/send?phone=2001024131345)
 - **🔗 GitHub:** [https://github.com/abdalla-3077](https://github.com/abdalla-3077)
 
@@ -28,8 +28,8 @@
 ## 🏆 Quick Stats
 
 - 🎯 **12,000+** Active Users across projects
-- 💼 **6+** Major Projects Completed
-- 🎓 **10+** Professional Certifications
+- 💼 **8+** Major Projects Completed
+- 🎓 **11+** Professional Certifications
 - ⭐ **Open Source** Contributor
 
 ---

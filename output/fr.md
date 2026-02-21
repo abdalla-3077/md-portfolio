@@ -42,6 +42,14 @@ Une sélection de mes travaux logiciels dont je suis fier :
   Moteur de recherche local optimisé pour les entreprises et services du Caire.
   **🛠️ Technologies:** Next.js, Node.js, MongoDB + 1
 
+- **⏱️ NextStep AI** – *Productivité de l'IA (2026)*
+  NextStep AI est une plateforme intelligente de gestion des tâches conçue pour améliorer la productivité. Grâce à l'IA, il analyse vos tâches, les hiérarchise et fournit des suggestions intelligentes pour la planification et l'exécution des tâches. Conçu dans un souci de performance, il exploite Fastify pour un backend rapide, Groq AI pour un traitement avancé et Next.js pour une expérience frontend transparente.
+  **🛠️ Technologies:** Next.js ,Fastify ,Groq AI
+
+- **⏱️ OG - Opportunity Guidance** – *Éducation (2026)*
+  OG (Opportunity Guidance) est une plateforme Android innovante conçue pour rendre les opportunités accessibles et organisées. L'application sert de plateforme complète pour découvrir des opportunités de carrière, des stages et des parcours de croissance professionnelle. Grâce à des recommandations basées sur l'IA et des notifications en temps réel, il aide les utilisateurs à gagner du temps et à évoluer professionnellement. La plate-forme dispose d'une interface intuitive construite avec React Native Paper, de notifications transparentes alimentées par Expo et d'un traitement backend intelligent avec Groq AI pour fournir une correspondance d'opportunités personnalisée.
+  **🛠️ Technologies:** React Native, Expo, React Native Paper, Expo Notifications, Express, Groq AI, Firebase
+
 **🔗 Voir sur GitHub:** [github.com](https://github.com/abdalla-3077)
 
 ---
@@ -60,6 +68,7 @@ Les qualifications professionnelles comprennent :
 - 🎓 **GNU Nano en 30 minutes** — Udemy (2026)
 - 🎓 **Docker Compose : gestion simplifiée des applications multi-conteneurs** — LinkedIn Learning (2026)
 - 🎓 **Actions pratiques sur GitHub** — LinkedIn Learning (2026)
+- 🎓 **Fondamentaux de la base de données** — Mahara-Tech (2026)
 
 ---
 

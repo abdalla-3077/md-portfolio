@@ -42,6 +42,14 @@
   针对开罗企业和服务优化的本地搜索引擎。
   **🛠️ 技术:** Next.js, Node.js, MongoDB + 1
 
+- **⏱️ NextStep AI** – *人工智能生产力 (2026)*
+  NextStep AI 是一个旨在提高生产力的智能任务管理平台。它使用人工智能来分析您的待办事项，确定其优先级，并为日程安排和任务完成提供智能建议。它在构建时充分考虑了性能，利用 Fastify 实现快速后端，利用 Groq AI 进行高级处理，利用 Next.js 实现无缝前端体验。
+  **🛠️ 技术:** Next.js ,Fastify ,Groq AI
+
+- **⏱️ OG - Opportunity Guidance** – *教育 (2026)*
+  OG（机会指导）是一个创新的 Android 平台，旨在让机会易于获取和组织。该应用程序是发现职业机会、实习和职业发展路径的综合中心。借助人工智能驱动的推荐和实时通知，它可以帮助用户节省时间并实现专业成长。该平台具有使用 React Native Paper 构建的直观界面、Expo 支持的无缝通知以及使用 Groq AI 的智能后端处理，以提供个性化的机会匹配。
+  **🛠️ 技术:** React Native, Expo, React Native Paper, Expo Notifications, Express, Groq AI, Firebase
+
 **🔗 在 GitHub 上查看:** [github.com](https://github.com/abdalla-3077)
 
 ---
@@ -60,6 +68,7 @@
 - 🎓 **30 分钟了解 GNU Nano** — Udemy (2026)
 - 🎓 **Docker Compose：简化的多容器应用程序管理** — LinkedIn Learning (2026)
 - 🎓 **GitHub 实用操作** — LinkedIn Learning (2026)
+- 🎓 **数据库基础知识** — Mahara-Tech (2026)
 
 ---
 
@@ -90,7 +99,7 @@ Git • Railway • Vercel • Linux • Windows • Visual Studio Code • Chat
 
 ## 💬 感言
 
-> 💭 *"坦白说，我要感谢您在机器人上所做的辛勤工作。您的工作组织清晰且专业..."*
+> 💭 *"坦白说，我要感谢您在机器人上所做的辛勤工作。您的工作组织清晰且专业......"*
 > — **Ghaida**
 
 > 💭 *"执行速度快，没​​有任何想法，我建议与他打交道。"*
